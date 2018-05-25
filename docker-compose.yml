@@ -1,0 +1,10 @@
+version: "3"
+services: 
+    web-php:
+       image: nginx_image
+       ports:
+        - "8080:80"
+
+
+
+
