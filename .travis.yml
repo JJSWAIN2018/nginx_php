@@ -1,0 +1,9 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker build -t jjswain2018/nginx-php.
+  - docker run jjswain2018/nginx-php /bin/sh -c "php -v"
+  - docker run jjswain2018/nginx-php /bin/sh -c "service nginx status"
